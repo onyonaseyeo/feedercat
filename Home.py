@@ -1,10 +1,5 @@
 import streamlit as st
-from PIL import Image
 import paho.mqtt.client as mqtt
-
-
-image = Image.open('doraemon.jpg')
-st.image(image, caption='Automatic Cat Feeder')
 
 st.title ("Automatic Pet Feeder")
 st.subheader ("Sisa Pakan")
