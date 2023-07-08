@@ -4,4 +4,3 @@ mysql-connector-python
 SQLAlchemy
 pandas
 paho-mqtt
-pycopy-webbrowser
