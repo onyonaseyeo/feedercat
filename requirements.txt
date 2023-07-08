@@ -1,6 +1,4 @@
 streamlit
-secrets
-Pillow
 paho-mqtt
 mysql-connector-python
 SQLAlchemy
