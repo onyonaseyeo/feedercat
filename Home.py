@@ -57,14 +57,15 @@ def main():
      
 if __name__ == '__main__':
      main()
-# if choice == "Data":
-#     st.header("Data Kucing")
-#     # Baca data dari tabel ke dataframe
-#     df = cnx.query('SELECT id, nama, umur, berat FROM data', ttl=600)
+    
+if choice == "Data":
+    st.header("Data Kucing")
+    # Baca data dari tabel ke dataframe
+    df = cnx.query('SELECT id, nama, umur, berat FROM data', ttl=600)
 
-#     # Memformat data sebelum menampilkan
-#     df['berat'] = df['berat'].apply(lambda x: '{:.1f}'.format(x))
-#     st.dataframe(df)
+    # Memformat data sebelum menampilkan
+    df['berat'] = df['berat'].apply(lambda x: '{:.1f}'.format(x))
+    st.dataframe(df)
 
 # elif choice == "Daftar":    
 #     with st.form(key="my_form"):
