@@ -41,6 +41,9 @@ client = get_mqtt_client()
 client.on_publish = on_publish
 client.connect(broker, int(port), 60)
 
+if st.button("Beri Pakan"):
+        client.publish(publishTopic, "open")
+ 
 # if choice == "Data":
 #     st.header("Data Kucing")
 #     # Baca data dari tabel ke dataframe
@@ -68,6 +71,5 @@ client.connect(broker, int(port), 60)
 #                 st.error('Silahkan Isi Data')
 
 # elif choice == "Manual":
-    if st.button("Beri Pakan"):
-        client.publish(publishTopic, "open")
+    
 
