@@ -1,5 +1,5 @@
 import streamlit as st
-import mysql.connector
+import mysql.client
 import pandas as pd
 import paho.mqtt.client as mqtt
 
