@@ -1,7 +1,6 @@
 streamlit
 paho-mqtt
 mysql_connector_python
-libmysqlclient
 SQLAlchemy
 secrets
 choice
