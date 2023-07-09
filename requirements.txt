@@ -1,6 +1,6 @@
 streamlit
 paho-mqtt
-docs
+python-docs
 mysqlclient
 libmysqlclient
 SQLAlchemy
