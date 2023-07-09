@@ -12,8 +12,8 @@ port = 1883
 publishTopic = "petfeeder/ura$^cp22/servo/"
 subscribeTopic = "petfeeder/ura$^cp22/jarak"
 
-menu = ["Home", "Manual"]
-choice = st.sidebar.selectbox("Menu", menu)
+# menu = ["Home", "Manual"]
+# choice = st.sidebar.selectbox("Menu", menu)
 
 image = Image.open('doraemon.jpg')
 st.image(image, caption='Automatic Cat Feeder')
@@ -67,7 +67,7 @@ client.connect(broker, int(port), 60)
 #             else :
 #                 st.error('Silahkan Isi Data')
 
-elif choice == "Manual":
+# elif choice == "Manual":
     if st.button("Beri Pakan"):
         client.publish(publishTopic, "open")
 
