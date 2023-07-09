@@ -1,7 +1,6 @@
 streamlit
 paho-mqtt
 mysql-connector-python
-mysqlclient_connector
 SQLAlchemy
 pandas
 mysqlclient == 2.2.0
