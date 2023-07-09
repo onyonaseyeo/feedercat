@@ -1,7 +1,8 @@
 streamlit
 paho-mqtt
-python-docs
-mysqlclient
+mysql_connector_python
+mysqlclient==1.4.2.post1
+pymysql
 libmysqlclient
 SQLAlchemy
 secrets
