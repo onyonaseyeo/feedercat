@@ -1,8 +1,8 @@
 streamlit
 paho-mqtt
 mysql-connector-python
-mysqlclient_ldflags
-libmysqlclien
+libmysqlclient
+mysqlclient
 SQLAlchemy
 choice
 pandas
