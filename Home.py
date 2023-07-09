@@ -1,10 +1,9 @@
 import streamlit as st
 import mysql.connector
 from secrets import choice
-import pandas as pd
 import paho.mqtt.client as mqtt
 
-cnx = mysql.connector.connect(user='root', password='',host='127.0.0.1',database='datakucing')
+cnx = st.experimental_connection('mysql', type='sql')
 
 cursor = cnx.cursor()
 
@@ -46,11 +45,8 @@ client.connect(broker, int(port), 60)
 
 if choice == "Data":
     st.header("Data Kucing")
-    # Query untuk membaca data dari tabel
-    query = "SELECT id, nama, umur, berat FROM data"
-
     # Baca data dari tabel ke dataframe
-    df = pd.read_sql(query, cnx)
+    df = cnx.query('SELECT id, nama, umur, berat FROM data', ttl=600)
 
     # Memformat data sebelum menampilkan
     df['berat'] = df['berat'].apply(lambda x: '{:.1f}'.format(x))
