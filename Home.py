@@ -1,8 +1,6 @@
 import streamlit as st
-import sqlite3
 from secrets import choice
 import paho.mqtt.client as mqtt
-import webbrowser
 
 cnx = st.experimental_connection('mysql', type='sql')
 df = cnx.query('SELECT * from data;', ttl=600)
@@ -17,8 +15,8 @@ port = 1883
 publishTopic = "petfeeder/ura$^cp22/servo/"
 subscribeTopic = "petfeeder/ura$^cp22/jarak"
 
-# menu = ["Home", "Manual"]
-# choice = st.sidebar.selectbox("Menu", menu)
+menu = ["Home", "Manual"]
+choice = st.sidebar.selectbox("Menu", menu)
 
 # image = Image.open('doraemon.jpg')
 # st.image(image, caption='Automatic Cat Feeder')
@@ -49,14 +47,14 @@ client.connect(broker, int(port), 60)
 if st.button("Beri Pakan"):
         client.publish(publishTopic, "open")
  
-def main():
-    # Membuat tombol di Streamlit
-    if st.button("Open Cam"):
-        url = "http://192.168.207.119"  # Ganti dengan URL yang Anda inginkan
-        webbrowser.open_new_tab(url)
+# def main():
+#     # Membuat tombol di Streamlit
+#     if st.button("Open Cam"):
+#         url = "http://192.168.207.119"  # Ganti dengan URL yang Anda inginkan
+#         webbrowser.open_new_tab(url)
      
-if __name__ == '__main__':
-     main()
+# if __name__ == '__main__':
+#      main()
     
 if choice == "Data":
     st.header("Data Kucing")
