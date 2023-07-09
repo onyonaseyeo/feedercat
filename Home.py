@@ -15,8 +15,8 @@ subscribeTopic = "petfeeder/ura$^cp22/jarak"
 # menu = ["Home", "Manual"]
 # choice = st.sidebar.selectbox("Menu", menu)
 
-image = Image.open('doraemon.jpg')
-st.image(image, caption='Automatic Cat Feeder')
+# image = Image.open('doraemon.jpg')
+# st.image(image, caption='Automatic Cat Feeder')
 
 st.title ("Automatic Pet Feeder")
 st.subheader ("Sisa Pakan")
