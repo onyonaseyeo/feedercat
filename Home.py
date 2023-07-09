@@ -4,9 +4,13 @@ from secrets import choice
 import paho.mqtt.client as mqtt
 import webbrowser
 
-cnx = sqlite3.connect('data.db')
-cursor = cnx.cursor()
+cnx = st.experimental_connection('mysql', type='sql')
+df = cnx.query('SELECT * from data;', ttl=600)
 
+# Print results.
+for row in df.itertuples():
+    st.write(f"{row.name} has a :{row.berat}:")
+ 
  # MQTT
 broker = "mqtt-dashboard.com"
 port = 1883
