@@ -3,6 +3,7 @@ paho-mqtt
 mysql-connector-python
 db-sqlite3
 SQLAlchemy
+pip==22.2.2
 
 
 
