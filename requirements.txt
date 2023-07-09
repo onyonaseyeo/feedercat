@@ -3,7 +3,7 @@ paho-mqtt
 mysql-connector-python
 db-sqlite3
 SQLAlchemy
-webbrowser
+
 
 
 
