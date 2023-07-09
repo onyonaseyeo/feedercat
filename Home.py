@@ -1,5 +1,4 @@
 import streamlit as st
-import mysql.connector
 from secrets import choice
 import paho.mqtt.client as mqtt
 
