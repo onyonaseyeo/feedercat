@@ -3,6 +3,6 @@ paho-mqtt
 mysql-connector-python
 SQLAlchemy
 pandas
-mysqlclient
+mysqlclient_cflags
 
 
