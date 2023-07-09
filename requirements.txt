@@ -3,8 +3,9 @@ paho-mqtt
 mysql-connector-python
 SQLAlchemy
 pkgconfig
+pip==23.1.2
 mysqlclient
-pip==22.2.2
+pip==23.1.2
 
 
 
