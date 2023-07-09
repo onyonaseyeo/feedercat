@@ -1,5 +1,6 @@
 streamlit
 paho-mqtt
+mysql-connector-python
 mysqlclient_connector
 SQLAlchemy
 pandas
