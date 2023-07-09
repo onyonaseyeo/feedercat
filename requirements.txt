@@ -3,5 +3,5 @@ paho-mqtt
 mysql-connector-python
 SQLAlchemy
 pandas
-mysqlclient
+
 
