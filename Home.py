@@ -1,13 +1,13 @@
 import streamlit as st
 import mysql.connector
-import mysqlclient
+import mysqlclient as sql
 from secrets import choice
 import pandas as pd
 import paho.mqtt.client as mqtt
 
-cnx = mysql.client(user='root', password='',
-                              host='127.0.0.1',
-                              database='datakucing')
+cnx = sql(user='root', password='',
+          host='127.0.0.1',
+          database='datakucing')
 
 cursor = cnx.cursor()
 
