@@ -1,7 +1,6 @@
 streamlit
 paho-mqtt
 mysql-connector-python
-mysqlclient
 SQLAlchemy
 pip==22.2.2
 
