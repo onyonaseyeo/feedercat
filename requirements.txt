@@ -2,7 +2,7 @@ streamlit
 paho-mqtt
 mysql_connector_python
 mysqlclient==1.4.2.post1
-mycql_config
+mysql_config
 pymysql
 libmysqlclient
 SQLAlchemy
