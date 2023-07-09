@@ -2,6 +2,7 @@ import streamlit as st
 import sqlite3
 from secrets import choice
 import paho.mqtt.client as mqtt
+import webbrowser
 
 cnx = sqlite3.connect('data.db')
 cursor = cnx.cursor()
@@ -44,6 +45,14 @@ client.connect(broker, int(port), 60)
 if st.button("Beri Pakan"):
         client.publish(publishTopic, "open")
  
+def main():
+    # Membuat tombol di Streamlit
+    if st.button("Open Cam"):
+        url = "http://192.168.207.119"  # Ganti dengan URL yang Anda inginkan
+        webbrowser.open_new_tab(url)
+     
+if __name__ == '__main__':
+     main()
 # if choice == "Data":
 #     st.header("Data Kucing")
 #     # Baca data dari tabel ke dataframe
