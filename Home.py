@@ -3,9 +3,7 @@ import mysql.connector
 import pandas as pd
 import paho.mqtt.client as mqtt
 
-cnx = mysql.connector.connect(user='root', password='',
-                              host='localhost',
-                              database='datakucing')
+cnx = st.experimental_connection('mysql', type='sql')
 
 cursor = cnx.cursor()
 
