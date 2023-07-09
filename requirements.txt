@@ -3,6 +3,6 @@ paho-mqtt
 mysql-connector-python
 SQLAlchemy
 pandas
-mysqlclient == 2.2.0
+mysqlclient
 
 
