@@ -1,7 +1,8 @@
 streamlit
 paho-mqtt
-python3-dev default-libmysqlclient-dev build-essential
+python3
 mysqlclient
+libmysqlclien
 SQLAlchemy
 choice
 pandas
