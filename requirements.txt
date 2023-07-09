@@ -2,7 +2,6 @@ streamlit
 paho-mqtt
 mysql_connector_python
 SQLAlchemy
-secrets
 choice
 pandas
 
