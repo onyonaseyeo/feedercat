@@ -49,7 +49,7 @@ client.connect(broker, int(port), 60)
 if choice == "Data":
     st.header("Data Kucing")
     # Query untuk membaca data dari tabel
-    query = "SELECT id, nama, umur, berat FROM datakucing"
+    query = "SELECT id, nama, umur, berat FROM data"
 
     # Baca data dari tabel ke dataframe
     df = pd.read_sql(query, cnx)
